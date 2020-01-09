@@ -14,7 +14,7 @@
         ["modifyvm","{{.Name}}","--memory","1024"],
         ["modifyvm","{{.Name}}","--cableconnected1","on"],
         ["modifyvm","{{.Name}}","--audio","none"],
-        ["modifyvm","{{.Name}}","--usb","off"]
+        ["modifyvm","{{.Name}}","--usb","on"]
       ],
       "disk_size": 40960,
       "guest_os_type": "Linux26_64",
@@ -44,7 +44,7 @@
         "umount /mnt<enter>",
         "reboot<enter>"
       ],
-      "guest_additions_mode": "disable",
+      "guest_additions_mode": "attach",
       "virtualbox_version_file": ".vbox_version",
       "ssh_username": "root",
       "ssh_password": "root",
